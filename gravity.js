@@ -458,16 +458,16 @@
   })();
   view.add(planet);
 
-  var starfield = (function() {
-    var elem = document.getElementById('starfield');
-    for (var i = 0; i < 100; i++) {
-      var star = createSvg('circle', elem);
-      star.style.fill = 'white';
-      star.cx.baseVal.value = (Math.random() * 200) - 100;
-      star.cy.baseVal.value = (Math.random() * 200) - 100;
-      star.r.baseVal.value = Math.random() * 0.25;
-    }
-  })();
+//-  var starfield = (function() {
+//    var elem = document.getElementById('starfield');
+//    for (var i = 0; i < 100; i++) {
+//      var star = createSvg('circle', elem);
+//      star.style.fill = 'white';
+//      star.cx.baseVal.value = (Math.random() * 200) - 100;
+//      star.cy.baseVal.value = (Math.random() * 200) - 100;
+//      star.r.baseVal.value = Math.random() * 0.25;
+//    }
+//  })();
 
   var createVisibilityLine = function(a, b, id) {
     var elem = document.getElementById(id);
